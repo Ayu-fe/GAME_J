@@ -2,11 +2,11 @@
     "x":0,
     "type":"Scene",
     "selectedBox":2,
-    "selecteID":5,
+    "selecteID":7,
     "searchKey":"Scene",
     "props":{"width":1136,"sceneColor":"#000000","height":640},
     "nodeParent":-1,
-    "maxID":7,
+    "maxID":8,
     "label":"Scene",
     "isOpen":true,
     "isDirectory":true,
@@ -21,14 +21,13 @@
             "props":{"y":447,"x":429,"width":278,"skin":"comp/button.png","height":120},
             "nodeParent":2,
             "label":"Button",
-            "isOpen":true,
+            "isOpen":false,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":3,
             "child":[
                 {
-                    "x":30,
                     "type":"Label",
                     "searchKey":"Label",
                     "props":{"y":35,"x":39,"text":"开始游戏","fontSize":50},
@@ -49,6 +48,7 @@
             "props":{"y":211,"x":340.5,"text":"传说中的J项目","fontSize":70,"color":"#fff"},
             "nodeParent":2,
             "label":"Label",
+            "isOpen":true,
             "isDirectory":false,
             "isAniNode":true,
             "hasChild":false,
@@ -70,6 +70,20 @@
             "isAniNode":true,
             "hasChild":false,
             "compId":6,
+            "child":[
+                ]
+        },
+        {
+            "x":15,
+            "type":"Label",
+            "searchKey":"Label",
+            "props":{"y":305,"x":713.7763671875,"text":"v0.0.1","fontSize":30,"color":"#f40"},
+            "nodeParent":2,
+            "label":"Label",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":7,
             "child":[
                 ]
         }],
