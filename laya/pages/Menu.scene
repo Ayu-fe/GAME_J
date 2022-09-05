@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"Scene",
-    "selectedBox":2,
-    "selecteID":7,
+    "selectedBox":3,
+    "selecteID":4,
     "searchKey":"Scene",
     "props":{"width":1136,"sceneColor":"#000000","height":640},
     "nodeParent":-1,
@@ -17,17 +17,18 @@
         {
             "x":15,
             "type":"Button",
-            "searchKey":"Button",
-            "props":{"y":447,"x":429,"width":278,"skin":"comp/button.png","height":120},
+            "searchKey":"Button,start_btn",
+            "props":{"y":383,"x":429,"width":278,"visible":false,"skin":"comp/button.png","name":"start_btn","height":120},
             "nodeParent":2,
-            "label":"Button",
-            "isOpen":false,
+            "label":"start_btn",
+            "isOpen":true,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":3,
             "child":[
                 {
+                    "x":30,
                     "type":"Label",
                     "searchKey":"Label",
                     "props":{"y":35,"x":39,"text":"开始游戏","fontSize":50},

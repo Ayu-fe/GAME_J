@@ -2,8 +2,20 @@
   'use strict';
 
   class MeunScript extends Laya.Script {
-      onAwake() {
+      constructor() {
+          super();
+      }
+      onStart() {
           console.log('开始游戏');
+          const random = ['red', 'green', 'blue', '#fff', '#ccc'];
+          const start_btn = this.owner.getChildByName('start_btn');
+          setInterval(function () {
+              const btnLabel = start_btn.getChildAt(0);
+              btnLabel.color = random[Math.floor(Math.random() * 5)];
+          }, 1000);
+          setTimeout(() => {
+              start_btn.visible = true;
+          }, 1000);
       }
   }
 
