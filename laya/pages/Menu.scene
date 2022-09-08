@@ -6,7 +6,7 @@
     "searchKey":"Scene",
     "props":{"width":1136,"sceneColor":"#000000","height":640},
     "nodeParent":-1,
-    "maxID":8,
+    "maxID":9,
     "label":"Scene",
     "isOpen":true,
     "isDirectory":true,
@@ -38,6 +38,23 @@
                     "isAniNode":true,
                     "hasChild":false,
                     "compId":4,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Script",
+                    "switchAble":true,
+                    "source":"src/script/StartBtnScript.ts",
+                    "searchKey":"Script,StartBtnScript",
+                    "removeAble":true,
+                    "props":{},
+                    "nodeParent":3,
+                    "label":"StartBtnScript",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":8,
                     "child":[
                         ]
                 }]
@@ -78,7 +95,7 @@
             "x":15,
             "type":"Label",
             "searchKey":"Label",
-            "props":{"y":305,"x":713.7763671875,"text":"v0.0.2","fontSize":30,"color":"#f40"},
+            "props":{"y":305,"x":713.7763671875,"text":"v0.0.3","fontSize":30,"color":"#f40"},
             "nodeParent":2,
             "label":"Label",
             "isDirectory":false,

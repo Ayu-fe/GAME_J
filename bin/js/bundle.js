@@ -5,6 +5,49 @@
       constructor() {
           super();
       }
+  }
+
+  class MeunScript$1 extends Laya.Script {
+      constructor() {
+          super();
+          this.content = [
+              {
+                  content: '我这是怎么了？？？',
+                  x: 20,
+                  y: 20
+              },
+              {
+                  content: '是谁在说话？',
+                  x: 20,
+                  y: 20
+              },
+              {
+                  content: '我的头好痛',
+                  x: 20,
+                  y: 20,
+                  color: 'red'
+              },
+              {
+                  content: '不论如何，先找找线索吧',
+                  x: 20,
+                  y: 20
+              }
+          ];
+          this.text = null;
+      }
+      createText(text, target) {
+          if (this.text)
+              this.text.destroy();
+          if (!text.length)
+              return;
+          const curText = text.shift();
+          this.text = new Laya.Label(curText.content);
+          this.text.x = curText.x;
+          this.text.y = curText.y;
+          this.text.fontSize = 50;
+          this.text.color = curText.color || '#fff';
+          target.addChild(this.text);
+      }
       onStart() {
           console.log('开始游戏');
           const random = ['red', 'green', 'blue', '#fff', '#ccc'];
@@ -17,13 +60,18 @@
               start_btn.visible = true;
           }, 1000);
       }
+      onClick(e) {
+          this.createText(this.content, this.owner);
+          console.log(e.target);
+      }
   }
 
   class GameConfig {
       constructor() { }
       static init() {
           var reg = Laya.ClassUtils.regClass;
-          reg("script/MenuScript.ts", MeunScript);
+          reg("script/StartBtnScript.ts", MeunScript);
+          reg("script/MenuScript.ts", MeunScript$1);
       }
   }
   GameConfig.width = 1136;
